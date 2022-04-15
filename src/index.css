@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+    font-family: 'IBM Plex Serif', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image:  linear-gradient(to right, rgba(87, 149, 204, 0.7), rgba(8, 59, 28, .2)), url(./back-fon.jpg);
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.category {
+  display:flex;
+  justify-content:space-evenly;
+}
+.ganreButtonSelected{
+  color: #fdeb6b; 
+  padding: 10px;
+}
+.ganreButton{
+  padding: 10px;
+  margin: 10x;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: rgba(130,176,143, 0.7);
+}
+.ganreButton:hover{
+  background-color: #fdeb6b;
+  color: black;
+}
+.image{
+  width: 200px;
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+ 
+}
+.allbooks{
+  display: flex;
+  overflow-y: scroll;
+  justify-content: space-between;
+  background-color: rgba(36, 111, 216, 0.5);
+  padding: 15px;
+}
+.onebook{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between ;
+  margin: 5px;
+  border: 5px solid white;
+  background-color: white;
+
+}
+.btn{
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: rgba(199, 219, 235, .7);
+  border: 1px solid blue;
+}
+.onebookselected{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between ;
+  width: 300px;
+  padding: 10px;
+  border: 10px solid rgb(34, 126, 107);
+  border-radius: 10px;
+margin: 20px;
+background-color: rgb(207, 235, 194);
+}
+.choice{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.strong{
+  display: flex;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+h1{
+  color: wheat;
+  text-shadow: 5px 2px black;
+}
+h3{
+  text-shadow: rgb(251, 249, 238) 2px 2px 10px;
+  color:  rgb(26, 94, 80);
+  /* text-shadow: 5px 2px black; */
+
+}
+
+.italia{
+  font-style: italic;
+  font-size: smaller;
+}
+
+.autor{
+  font-size: medium;
+  font-style: normal;
+}
+.describe{
+  text-align: start;
+}
+.show{
+  border: none;
+  background: none;
+  font-style: italic;
+  font-size: 14px;
+}
+.fordelete{
+  margin-bottom: 15px;
+  padding: 5px;
+  background-color: rgb(185, 226, 165);
+  border: 1px solid rgb(8, 162, 14);
+}
