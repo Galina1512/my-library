@@ -1,15 +1,8 @@
 import { useSelector } from "react-redux";
 import { useState } from "react";
-import Firstpage from "../../Firstpage";
 import { getCartItems } from "../../redux/cartSlice";
 import CartItem from "./CartItem";
 import up from "./double-up-50.png";
-import{
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-} from "react-router-dom";
 
 const Cart = () => {
     const cartItems = useSelector(getCartItems);
