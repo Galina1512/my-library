@@ -1,16 +1,32 @@
-import './App.css';
-import Books from './Components/Books/Books';
-import Category from './Components/Category/AllCategoty';
+import React from 'react';
+import{
+BrowserRouter as Router,
+    Routes,
+    Route,
+    Link
+} from 'react-router-dom';
 import Cart from './Components/Cart/Cart';
-// import { data } from './data';
+import { useSelector } from "react-redux";
+import Firstpage from './Firstpage';
+import './App.css';
+import { getCartItems } from "./redux/cartSlice";
 
-function App() {
-  return (<div className='App' >
-    <Category/>
-    <Books/>
-    <Cart/>
+function App(){
+    const cartItems = useSelector(getCartItems);
 
-  </div>)
-}
+    return <Router>
+        <nav className='header'>
+            <Link to='/' className='center h1'>Что выбрать почитать</Link>
+            <div className='rigth'>
+            <Link to='/cart' className='vibor'>Ваш выбор</Link>
+            <span className='circle'>{ cartItems.length }</span>
 
+            </div>
+        </nav>
+        <Routes>
+            <Route path='/' element={<Firstpage/>}/>
+            <Route path='/Cart' element ={<Cart/>}/> 
+        </Routes>
+    </Router>
+};
 export default App;
