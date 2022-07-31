@@ -102,6 +102,10 @@ z-index: 5;
   background-color: rgba(199, 219, 235, .7);
   border: 1px solid blue;
 }
+.btn:hover{
+background-color: #fdeb6b;
+}
+
 .onebookselected{
   display: flex;
   flex-direction: column;
