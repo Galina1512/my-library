@@ -34,17 +34,7 @@ const Cart = () => {
         <div  className="choice">
     {cartItems.map(cartItem => <CartItem cartItem = { cartItem }/>)}
     </div>
-    {/* <div>
-    <Router>
-        <nav>
-            <Link to='/firstpage'>Вернуться на главную страницу </Link>
-
-        </nav>
-        <Routes>
-            <Route path="/firstpage" element={<Firstpage/>}/>
-        </Routes>
-    </Router>
-    </div> */}
+    
             <div className="upp">
     <button onClick={scrollToTop } className="btnup" style={{display: visible ? 'inline' : 'none'}}><img src={up}  width='45px' alt='setup' className='btnupp' /> </button>
 </div>
